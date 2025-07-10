@@ -371,102 +371,106 @@ export default function PostOfficeExamsPage() {
         <div className="grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
 
           {/* Card 1 */}
-          <CardContainer className="inter-var group transition-all">
-            <CardBody
-              className="bg-white relative group/card 
+<CardContainer className="inter-var group transition-all">
+  <CardBody
+              className="group bg-white hover:bg-[#fff2ea] transition-colors duration-300 relative group/card 
              dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] 
              dark:bg-black dark:border-white/[0.2] border-black/[0.1] 
              w-full h-auto rounded-xl p-12 border 
              shadow-[inset_8px_-8px_20px_rgba(0,0,0,0.1)] max-h-[1000px]"
             >
-              <CardItem translateZ="60" className="text-[6vw] lg:text-[1.2vw] font-bold text-black dark:text-white flex items-center gap-2">
-                <img src="/images/plan_icon1.png" />Starter <span className="font-normal gap-0">Plan</span>
-              </CardItem>
-              <CardItem as="p" translateZ="60" className="text-black opacity-0 text-l max-w-sm -mt-19 dark:text-neutral-300">
-                <span className='font-bold text-4xl'>₹ </span><span className='-ml-2 text-[8.8vw] lg:text-[2.6vw] font-bold text-red-800'>199</span><span className="ml-2 relative inline-block text-3xl font-bold text-black
-  after:content-[''] after:absolute after:w-[2px] after:h-[220%] rounded-full
-  after:bg-red-600 after:top-[-59%] after:left-[52%] after:-translate-x-1/2 
-  after:rotate-74 after:origin-center">
-                  ₹300
-                </span>
-                <span className='ml-2 text-[3.3vw] font-semibold lg:text-[0.9vw]'> per month</span>
+    <CardItem translateZ="60" className="text-[6vw] lg:text-[1.2vw] font-bold text-black dark:text-white flex items-center gap-2">
+      <img src="/images/plan_icon1.png" />Starter <span className="font-normal gap-0">Plan</span>
+    </CardItem>
 
-              </CardItem>
-              <CardItem translateZ={60} as="button" className="mt-14 px-10 py-1 rounded-3xl bg-gradient-to-b from-red-600 via-red-700 to-red-900 dark:bg-white dark:text-black text-white text-2xl font-bold">
-                FREE
-              </CardItem>
-              <CardItem as="div" translateZ="60" className="text-black text-l max-w-sm mt-3 dark:text-neutral-300">
-                <div className="opacity-0 mt-4 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
-                  </div>
-                Try 3 tests and see how the app works – no payment needed!
-               
-              </CardItem>
-              <CardItem translateZ={60} as="button" className="mt-8 w-[95%] text-center rounded-full p-2 text-[3vw] lg:text-[1.1vw] bg-[#ece7dd] font-semibold mb-[5vw] lg:mb-[2vw] 
-             hover:bg-gradient-to-b from-red-600 via-red-700 to-red-900 hover:text-white 
-             transition-all duration-600 inline-block shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]"
-              >
-                Sign Up
-              </CardItem>
-              <CardItem translateZ="60" className="w-full">
-                <div className="flex flex-col 2xl:gap-3 font-semibold">
-                  <div>
-                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">3 Number of Attempts</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">25 Questions per Test</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Repetitive Questions</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Limited Performance Tracking</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">View Exam History</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Review Answers</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Pause &amp; Resume Test</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Set Goals</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Past Papers Limited Access</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Bookmark Questions</p>
-                  </div>
-                  <div>
-                    <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Customer Support</p>
-                  </div>
-                 
+    <CardItem as="p" translateZ="60" className="text-black opacity-0 text-l max-w-sm -mt-19 dark:text-neutral-300">
+      <span className='font-bold text-4xl'>₹ </span>
+      <span className='-ml-2 text-[8.8vw] lg:text-[2.6vw] font-bold text-red-800'>199</span>
+      <span className="ml-2 relative inline-block text-3xl font-bold text-black
+        after:content-[''] after:absolute after:w-[2px] after:h-[220%] rounded-full
+        after:bg-red-600 after:top-[-59%] after:left-[52%] after:-translate-x-1/2 
+        after:rotate-74 after:origin-center">
+        ₹300
+      </span>
+      <span className='ml-2 text-[3.3vw] font-semibold lg:text-[0.9vw]'> per month</span>
+    </CardItem>
 
-                </div>
-              </CardItem>
+    <CardItem translateZ={60} as="button" className="mt-14 px-10 py-1 rounded-3xl bg-gradient-to-b from-red-600 via-red-700 to-red-900 dark:bg-white dark:text-black text-white text-2xl font-bold">
+      FREE
+    </CardItem>
 
-            </CardBody>
-          </CardContainer>
+    <CardItem as="div" translateZ="60" className="text-black text-l max-w-sm mt-3 dark:text-neutral-300">
+      <div className="opacity-0 mt-4 select-none">
+        <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
+        <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+      </div>
+      Try 3 tests and see how the app works – no payment needed!
+    </CardItem>
+
+    <CardItem translateZ={60} as="button"
+      className="mt-8 w-[95%] text-center rounded-full p-2 text-[3vw] lg:text-[1.1vw] bg-[#ece7dd] font-semibold mb-[5vw] lg:mb-[2vw] 
+      group-hover:bg-gradient-to-b group-hover:from-red-600 group-hover:via-red-700 group-hover:to-red-900 
+      group-hover:text-white transition-all duration-600 inline-block shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]"
+    >
+      Sign Up
+    </CardItem>
+
+    <CardItem translateZ="60" className="w-full">
+      <div className="flex flex-col 2xl:gap-3 font-semibold">
+        <div>
+          <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">3 Number of Attempts</p>
+        </div>
+        <div>
+          <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">25 Questions per Test</p>
+        </div>
+        <div>
+          <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Repetitive Questions</p>
+        </div>
+        <div>
+          <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Limited Performance Tracking</p>
+        </div>
+        <div>
+          <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">View Exam History</p>
+        </div>
+        <div>
+          <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Review Answers</p>
+        </div>
+        <div>
+          <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Pause & Resume Test</p>
+        </div>
+        <div>
+          <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Set Goals</p>
+        </div>
+        <div>
+          <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Past Papers Limited Access</p>
+        </div>
+        <div>
+          <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Bookmark Questions</p>
+        </div>
+        <div>
+          <img src="/images/plan_wrong_icon.png" alt="Wrong" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+          <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Customer Support</p>
+        </div>
+      </div>
+    </CardItem>
+  </CardBody>
+</CardContainer>
+
 
           {/* Card 2 */}
           <CardContainer className="inter-var">
             <CardBody
-              className="bg-white relative group/card 
+              className="group bg-white hover:bg-[#fff2ea] transition-colors duration-300 relative group/card 
              dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] 
              dark:bg-black dark:border-white/[0.2] border-black/[0.1] 
              w-full h-auto rounded-xl p-12 border 
@@ -488,12 +492,13 @@ export default function PostOfficeExamsPage() {
               <CardItem as="p" translateZ="60" className="text-black text-l max-w-sm mt-8 dark:text-neutral-300">
                 Great for monthly practice with real exam-style tests and answers.
               </CardItem>
-              <CardItem translateZ={60} as="button" className="mt-8 w-[95%] text-center rounded-full p-2 text-[3vw] lg:text-[1.1vw] bg-[#ece7dd] font-semibold mb-[5vw] lg:mb-[2vw] 
-             hover:bg-gradient-to-b from-red-600 via-red-700 to-red-900 hover:text-white 
-             transition-all duration-600 inline-block shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]"
-              >
-                Get Started
-              </CardItem>
+              <CardItem translateZ={60} as="button"
+  className="mt-8 w-[95%] text-center rounded-full p-2 text-[3vw] lg:text-[1.1vw] bg-[#ece7dd] font-semibold mb-[5vw] lg:mb-[2vw] 
+  group-hover:bg-gradient-to-b group-hover:from-red-600 group-hover:via-red-700 group-hover:to-red-900 
+  group-hover:text-white transition-all duration-600 inline-block shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]"
+>
+  Get Started
+</CardItem>
               <CardItem translateZ="60" className="w-full ">
                 <div className="flex flex-col 2xl:gap-3 font-semibold">
                   <div>
@@ -540,6 +545,7 @@ export default function PostOfficeExamsPage() {
                     <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
                     <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Customer Support</p>
                   </div>
+
                 </div>
               </CardItem>
 
@@ -548,9 +554,9 @@ export default function PostOfficeExamsPage() {
           </CardContainer>
 
           {/* Card 3 */}
-          <CardContainer className="inter-var">
+         <CardContainer className="inter-var">
             <CardBody
-              className="bg-white relative group/card 
+              className="group bg-white hover:bg-[#fff2ea] transition-colors duration-300 relative group/card 
              dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] 
              dark:bg-black dark:border-white/[0.2] border-black/[0.1] 
              w-full h-auto rounded-xl p-12 border 
@@ -572,13 +578,14 @@ export default function PostOfficeExamsPage() {
               <CardItem as="p" translateZ="60" className="text-black text-l max-w-sm mt-8 dark:text-neutral-300">
                 Best for serious learners more tests, detailed reports, past papers.
               </CardItem>
-              <CardItem translateZ={60} as="button" className="mt-8 w-[95%] text-center rounded-full p-2 text-[3vw] lg:text-[1.1vw] bg-[#ece7dd] font-semibold mb-[5vw] lg:mb-[2vw] 
-             hover:bg-gradient-to-b from-red-600 via-red-700 to-red-900 hover:text-white 
-             transition-all duration-600 inline-block shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]"
-              >
-                Get Started
-              </CardItem>
-              <CardItem translateZ="60" className="w-full mt-4">
+              <CardItem translateZ={60} as="button"
+  className="mt-8 w-[95%] text-center rounded-full p-2 text-[3vw] lg:text-[1.1vw] bg-[#ece7dd] font-semibold mb-[5vw] lg:mb-[2vw] 
+  group-hover:bg-gradient-to-b group-hover:from-red-600 group-hover:via-red-700 group-hover:to-red-900 
+  group-hover:text-white transition-all duration-600 inline-block shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]"
+>
+  Get Started
+</CardItem>
+              <CardItem translateZ="60" className="w-full ">
                 <div className="flex flex-col 2xl:gap-3 font-semibold">
                   <div>
                     <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
@@ -588,52 +595,53 @@ export default function PostOfficeExamsPage() {
                     <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
                     <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Everything in Smart Plan</p>
                   </div>
-                  
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Review Answers</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Pause &amp; Resume Test</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Mostly Unique Questions</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Advanced Performance Tracking</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Set Goals</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">View Exam History</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Unlimited Past Papers Access</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Bookmark Questions</p>
                   </div>
-
-
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Customer Support</p>
+                  </div>
 
                 </div>
               </CardItem>
 
+
             </CardBody>
           </CardContainer>
-
           {/* Card 4 */}
           <CardContainer className="inter-var">
             <CardBody
-              className="bg-white relative group/card 
+              className="group bg-white hover:bg-[#fff2ea] transition-colors duration-300 relative group/card 
              dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] 
              dark:bg-black dark:border-white/[0.2] border-black/[0.1] 
              w-full h-auto rounded-xl p-12 border 
@@ -649,19 +657,20 @@ export default function PostOfficeExamsPage() {
   after:rotate-79 after:origin-center">
                   ₹1200
                 </span>
-                <span className='ml-3 text-[3.3vw] font-semibold lg:text-[0.9vw]'> 6 months</span>
+                <span className='ml-2 text-[3.3vw] font-semibold lg:text-[0.9vw]'> 6 months</span>
 
               </CardItem>
               <CardItem as="p" translateZ="60" className="text-black text-l max-w-sm mt-8 dark:text-neutral-300">
                 Practice unlimited, learn fast, and get fully ready for your exam.
               </CardItem>
-              <CardItem translateZ={60} as="button" className="mt-8 w-[95%] text-center rounded-full p-2 text-[3vw] lg:text-[1.1vw] bg-[#ece7dd] font-semibold mb-[5vw] lg:mb-[2vw] 
-             hover:bg-gradient-to-b from-red-600 via-red-700 to-red-900 hover:text-white 
-             transition-all duration-600 inline-block shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]"
-              >
-                Get Started
-              </CardItem>
-              <CardItem translateZ="60" className="w-full mt-4">
+             <CardItem translateZ={60} as="button"
+  className="mt-8 w-[95%] text-center rounded-full p-2 text-[3vw] lg:text-[1.1vw] bg-[#ece7dd] font-semibold mb-[5vw] lg:mb-[2vw] 
+  group-hover:bg-gradient-to-b group-hover:from-red-600 group-hover:via-red-700 group-hover:to-red-900 
+  group-hover:text-white transition-all duration-600 inline-block shadow-[inset_0_0_20px_rgba(0,0,0,0.2)]"
+>
+  Get Started
+</CardItem>
+              <CardItem translateZ="60" className="w-full ">
                 <div className="flex flex-col 2xl:gap-3 font-semibold">
                   <div>
                     <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
@@ -671,46 +680,49 @@ export default function PostOfficeExamsPage() {
                     <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
                     <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Everything in Achiever Plan</p>
                   </div>
-                  
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Review Answers</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Pause &amp; Resume Test</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Mostly Unique Questions</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Advanced Performance Tracking</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Set Goals</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">View Exam History</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Unlimited Past Papers Access</p>
                   </div>
-                  <div className="opacity-0 select-none">
-                    <img src="/images/plan_correct_icon.png" className="mr-2 inline w-[3vw] lg:w-[0.9vw]" />
-                    <p className="inline text-[3vw] lg:text-[0.9vw]">Placeholder</p>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Bookmark Questions</p>
+                  </div>
+                  <div className='invisible'>
+                    <img src="/images/plan_correct_icon.png" alt="Correct" className="mr-2 2xl:mr-3 inline w-[3vw] lg:w-[0.9vw]" />
+                    <p className="inline text-[3vw] lg:text-[0.9vw] 2xl:text-[0.8vw]">Customer Support</p>
                   </div>
 
                 </div>
               </CardItem>
 
+
             </CardBody>
           </CardContainer>
-
         </div>
       </section>
 
